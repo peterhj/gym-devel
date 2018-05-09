@@ -66,8 +66,7 @@ class AntNoLifeBonusEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         return ob, reward, done, dict(
             reward_forward=forward_reward,
             reward_ctrl=-ctrl_cost,
-            reward_contact=-contact_cost,
-            reward_survive=survive_reward)
+            reward_contact=-contact_cost)
 
     def _get_obs(self):
         return np.concatenate([
