@@ -280,6 +280,13 @@ register(
 )
 
 register(
+    id='AntNoLifeBonus-v1',
+    entry_point='gym.envs.mujoco:AntNoLifeBonusEnv',
+    max_episode_steps=1000,
+    reward_threshold=6000.0,
+)
+
+register(
     id='Humanoid-v1',
     entry_point='gym.envs.mujoco:HumanoidEnv',
     max_episode_steps=1000,
